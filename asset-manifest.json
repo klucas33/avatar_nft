@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/klucas33/avatar_nft.git/static/css/main.78e4f41e.css",
+    "main.js": "/klucas33/avatar_nft.git/static/js/main.cb987755.js",
+    "index.html": "/klucas33/avatar_nft.git/index.html",
+    "main.78e4f41e.css.map": "/klucas33/avatar_nft.git/static/css/main.78e4f41e.css.map",
+    "main.cb987755.js.map": "/klucas33/avatar_nft.git/static/js/main.cb987755.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78e4f41e.css",
+    "static/js/main.cb987755.js"
+  ]
+}
