@@ -1,0 +1,39 @@
+body {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+header {
+  height: 100vh;
+  background-image: url("https://s3.us-west-2.amazonaws.com/secure.notion-static.com/cffcdfe7-197e-47f7-9b3e-0cdc852732a4/team9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221106%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221106T101803Z&X-Amz-Expires=86400&X-Amz-Signature=d9e8011a7ad20bcd53568ae696ae8231fbfe078da3a82c87dc5e9dd0e6fe2f80&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22team9.png%22&x-id=GetObject");
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
+}
+
+.apple {
+  color: white;
+  margin-left: 20px;
+  margin-top: 17px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin: 0 20px;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  vertical-align: -webkit-baseline-middle;
+  cursor: pointer;
+}
