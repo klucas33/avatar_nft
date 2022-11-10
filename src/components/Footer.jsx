@@ -6,6 +6,14 @@ const Container = styled.div`
   height: 400px;
   background-color: black;
   color: white;
+  position: relative;
+  &::after {
+    content: "";
+    width: 99.6%;
+    position: absolute;
+    border: 1px solid white;
+    bottom: 80px;
+  }
 `;
 
 export default function Footer() {

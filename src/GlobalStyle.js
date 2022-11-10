@@ -12,6 +12,18 @@ const GlobalStyle = createGlobalStyle`
     body, html {
         font-family: PyeongChangPeace-Bold;
     }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 15px;
+    }
     
 `;
 

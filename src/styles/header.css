@@ -5,7 +5,7 @@ body {
 
 header {
   height: 100vh;
-  background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+  background-image: url("../assets/image/team9.png");
   background-size: cover;
   position: relative;
 }
