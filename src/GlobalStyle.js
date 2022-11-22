@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
     body, html {
         font-family: PyeongChangPeace-Bold;
+        box-sizing: border-box;
     }
 
     h1 {

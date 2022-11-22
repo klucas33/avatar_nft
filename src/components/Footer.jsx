@@ -6,14 +6,18 @@ const Container = styled.div`
   height: 400px;
   background-color: black;
   color: white;
+  display: flex;
+  align-items: center;
   position: relative;
-  &::after {
-    content: "";
-    width: 99.6%;
-    position: absolute;
-    border: 1px solid white;
-    bottom: 80px;
-  }
+`;
+
+const Line = styled.div`
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 95%;
+  margin: 0 auto;
+  border-top: 3px solid white;
 `;
 
 export default function Footer() {
@@ -26,12 +30,12 @@ export default function Footer() {
   return (
     <Container>
       <div className="bear">
-        <div>
+        <Line>
           <p>&copy;&nbsp; ONE_Pick All Right Reserved</p>
           <p>ONE_Pick 이용약관</p>
           <p>개인정보방침</p>
           <p>파트너십 문의</p>
-        </div>
+        </Line>
         <div className="row" onClick={goTop}>
           <span>🔺</span>
         </div>
