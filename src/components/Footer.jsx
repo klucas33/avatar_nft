@@ -20,6 +20,12 @@ const Line = styled.div`
   border-top: 3px solid white;
 `;
 
+const TEXT = styled.p`
+  font-size: 15px;
+  cursor: pointer;
+  text-align: left;
+`;
+
 export default function Footer() {
   const goTop = () => {
     return window.scrollTo({
@@ -31,10 +37,10 @@ export default function Footer() {
     <Container>
       <div className="bear">
         <Line>
-          <p>&copy;&nbsp; ONE_Pick All Right Reserved</p>
-          <p>ONE_Pick 이용약관</p>
-          <p>개인정보방침</p>
-          <p>파트너십 문의</p>
+          <TEXT>&copy;&nbsp; ONE_Pick All Right Reserved</TEXT>
+          <TEXT>ONE_Pick 이용약관</TEXT>
+          <TEXT>개인정보방침</TEXT>
+          <TEXT>파트너십 문의</TEXT>
         </Line>
         <div className="row" onClick={goTop}>
           <span>🔺</span>

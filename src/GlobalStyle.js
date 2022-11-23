@@ -2,28 +2,31 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
-    @font-face {
-    font-family: 'PyeongChangPeace-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
+@font-face{
+  font-family:'bitbit';
+  src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
 }
 
     body, html {
-        font-family: PyeongChangPeace-Bold;
+        font-family: bitbit;
         box-sizing: border-box;
     }
 
     h1 {
         font-size: 30px;
+        font-weight:100;
     }
 
     li {
         font-size: 15px;
+        font-weight:100;
     }
 
     p {
         font-size: 15px;
+        font-weight:100;
+        text-align: center;
+        width: 100%;
     }
     
 `;
