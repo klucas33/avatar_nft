@@ -39,7 +39,6 @@ export default function Footer() {
         <Line>
           <TEXT>&copy;&nbsp; ONE_Pick All Right Reserved</TEXT>
           <TEXT>ONE_Pick 이용약관</TEXT>
-          <TEXT>개인정보방침</TEXT>
           <TEXT>파트너십 문의</TEXT>
         </Line>
         <div className="row" onClick={goTop}>
