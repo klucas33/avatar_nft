@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/main.css";
 import styled from "styled-components";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const Container = styled.main`
   position: relative;
@@ -28,21 +29,33 @@ const Loading = styled.div`
 `;
 
 export default function Main() {
-  const [isLoading, setIsLoaindg] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        setIsLoading(true);
+      } catch (e) {
+        // handle error case anyway you want
+      }
+      setIsLoading(false);
+    })();
+  }, []);
+
   return (
     <>
       {isLoading ? (
+        <Container id="2">
+          <Loading>Loading ...</Loading>
+        </Container>
+      ) : (
         <main id="2">
           <article>
-            <h1>MORE THAN JUST A FRIEND</h1>
+            <h1>Shop Parts</h1>
             <p>나만의 다람쥐를 꾸며본다!</p>
             <Box />
           </article>
         </main>
-      ) : (
-        <Container id="2">
-          <Loading>Loading ...</Loading>
-        </Container>
       )}
     </>
   );

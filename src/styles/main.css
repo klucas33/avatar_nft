@@ -1,6 +1,7 @@
 main {
   height: 100vh;
   background-color: black;
+  padding-top: 100px;
 }
 
 h1 {
