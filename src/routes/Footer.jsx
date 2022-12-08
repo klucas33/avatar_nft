@@ -14,8 +14,9 @@ const Container = styled.div`
 const Line = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   height: 80px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   border-top: 3px solid white;
 `;
@@ -23,7 +24,7 @@ const Line = styled.div`
 const TEXT = styled.p`
   font-size: 15px;
   cursor: pointer;
-  text-align: left;
+  text-align: center;
 `;
 
 export default function Footer() {
@@ -40,10 +41,11 @@ export default function Footer() {
           <TEXT>&copy;&nbsp; ONE_Pick All Right Reserved</TEXT>
           <TEXT>ONE_Pick 이용약관</TEXT>
           <TEXT>파트너십 문의</TEXT>
+          <TEXT>문의</TEXT>
         </Line>
-        <div className="row" onClick={goTop}>
+        {/* <div className="row" onClick={goTop}>
           <span>🔺</span>
-        </div>
+        </div> */}
       </div>
     </Container>
   );

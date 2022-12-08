@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     body, html {
         font-family: bitbit;
         box-sizing: border-box;
+        background-color: black;
     }
 
     h1 {

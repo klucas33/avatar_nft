@@ -5,13 +5,3 @@
   align-items: flex-end;
   justify-content: space-between;
 }
-
-.row {
-  position: absolute;
-  right: 35px;
-  bottom: 20px;
-  border: 1px solid white;
-  border-radius: 100%;
-  font-size: 30px;
-  cursor: pointer;
-}
