@@ -28,7 +28,7 @@ const Title = styled.h1`
   font-size: 80px;
   position: absolute;
   top: -12%;
-  left: 410px;
+  left: 415px;
 `;
 
 const Content = styled.article`
