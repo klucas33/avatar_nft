@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Footer from "./Footer";
 import MainBg from "../assets/image/main_bg.png";
 import { Link } from "react-router-dom";
+import { useWeb3React } from "@web3-react/core";
+import { injected } from "../lib/connectors";
 
 const Container = styled.div`
   width: 80%;
@@ -50,12 +52,11 @@ const CotentInfo = styled.h1`
 `;
 
 const EnterButton = styled.div`
+  height: 70px;
   background-color: #bfc500;
   border-radius: 8px;
   color: #000;
   font-size: 20px;
-  width: 80%;
-  height: 100px;
   margin-bottom: 20px;
   transition: 0.5s;
   display: flex;
@@ -69,6 +70,21 @@ const EnterButton = styled.div`
 `;
 
 export default function Enter() {
+  const { connector, chainId, account, active, activate, deactivate } =
+    useWeb3React();
+
+  const connectWallet = async () => {
+    try {
+      await activate(injected, (error) => {
+        // 크롬 익스텐션 없을 경우 오류 핸들링
+        if (!active) throw new Error("Metamask 익스텐션을 설치해주세요");
+      });
+    } catch (err) {
+      alert(err);
+      window.open("https://metamask.io/download.html");
+    }
+  };
+
   return (
     <>
       <Container>
@@ -80,14 +96,16 @@ export default function Enter() {
               Welcome to <br />
               ONE_Pick
             </CotentInfo>
-            <EnterButton>
-              <Link
-                style={{ textDecoration: "none", color: "black" }}
-                to="./home"
-              >
-                Enter
-              </Link>
-            </EnterButton>
+            <Link
+              style={{
+                textDecoration: "none",
+                color: "black",
+                width: "80%",
+              }}
+              to="./home"
+            >
+              <EnterButton onClick={connectWallet}>Enter</EnterButton>
+            </Link>
           </Content>
         </Box>
       </Container>
