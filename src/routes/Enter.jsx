@@ -33,7 +33,6 @@ const Title = styled.h1`
   top: -7%;
   left: 36%;
   margin: 0px;
-  cursor: none;
 `;
 
 const Box1 = styled.div`
@@ -53,6 +52,7 @@ const CotentInfo = styled.h1`
   margin: 20px 0 0 0;
   align-items: flex-start;
   justify-content: left;
+  cursor: none;
 `;
 
 const EnterButton = styled.div`
