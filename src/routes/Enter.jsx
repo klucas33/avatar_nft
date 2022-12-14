@@ -36,12 +36,12 @@ const Title = styled.h1`
 `;
 
 const Box1 = styled.div`
-  width: 350px;
+  width: 320px;
   height: 120px;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   position: absolute;
-  bottom: 29%;
+  bottom: 31%;
   left: 10%;
 `;
 
@@ -55,7 +55,7 @@ const CotentInfo = styled.h1`
 `;
 
 const EnterButton = styled.div`
-  height: 70px;
+  height: 60px;
   background-color: #bfc500;
   width: 100%;
   border-radius: 8px;
@@ -103,7 +103,6 @@ export default function Enter() {
               style={{
                 color: "black",
                 width: "100%",
-                display: "inline-block",
               }}
               to="./home"
             >
