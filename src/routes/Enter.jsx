@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Box = styled.div`
-  height: 82vh;
+  height: 80vh;
   margin-top: 100px;
   width: 100%;
   position: relative;
@@ -36,8 +36,8 @@ const Title = styled.h1`
 `;
 
 const Box1 = styled.div`
-  width: 380px;
-  height: 150px;
+  width: 350px;
+  height: 120px;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   position: absolute;
