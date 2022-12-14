@@ -40,23 +40,5 @@ export default function About() {
   const togglePopup = () => {
     setState(!state);
   };
-  return (
-    <Container id="5">
-      <article>
-        <Span>
-          <Title>gmail계정 :</Title>
-          <Content>OnePickOfficial@gmail.com</Content>
-        </Span>
-        <Span>
-          <Title>디코 :</Title>
-          <Content>https://discord.gg/AfcThxtea7</Content>
-        </Span>
-        <Span>
-          <Title>트위터 :</Title>
-          <Content>https://twitter.com/OfficialOnePick</Content>
-        </Span>
-        <LinkTo onClick={togglePopup}>Contact us</LinkTo>
-      </article>
-    </Container>
-  );
+  return <Container id="5"></Container>;
 }

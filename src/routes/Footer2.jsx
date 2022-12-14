@@ -49,7 +49,7 @@ export default function Footer2() {
       <div className="bear">
         <Line>
           <TEXT>&copy;&nbsp; ONE_Pick All Right Reserved</TEXT>
-          <TEXT>ONE_Pick 이용약관</TEXT>
+          <TEXT>이용약관</TEXT>
           <TEXT>파트너십 문의</TEXT>
           <TEXT>문의</TEXT>
         </Line>

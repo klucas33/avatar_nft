@@ -12,34 +12,37 @@ const Container = styled.div`
 `;
 
 const Box = styled.div`
-  height: 100vh;
+  height: 82vh;
   margin-top: 100px;
   width: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
 `;
 
 const BGImage = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 `;
 
 const Title = styled.h1`
   color: white;
   font-size: 80px;
   position: absolute;
-  top: -12%;
-  left: 425px;
+  top: -7%;
+  left: 36%;
+  margin: 0px;
+  cursor: none;
 `;
 
-const Content = styled.article`
-  width: 400px;
-  height: 200px;
+const Box1 = styled.div`
+  width: 380px;
+  height: 150px;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   position: absolute;
-  font-weight: 100;
-  bottom: 0;
-  left: 0%;
+  bottom: 29%;
+  left: 10%;
 `;
 
 const CotentInfo = styled.h1`
@@ -54,6 +57,7 @@ const CotentInfo = styled.h1`
 const EnterButton = styled.div`
   height: 70px;
   background-color: #bfc500;
+  width: 100%;
   border-radius: 8px;
   color: #000;
   font-size: 20px;
@@ -70,8 +74,7 @@ const EnterButton = styled.div`
 `;
 
 export default function Enter() {
-  const { connector, chainId, account, active, activate, deactivate } =
-    useWeb3React();
+  const { active, activate, deactivate } = useWeb3React();
 
   const connectWallet = async () => {
     try {
@@ -91,25 +94,27 @@ export default function Enter() {
         <Box>
           <BGImage src={MainBg} />
           <Title>ONE_Pick</Title>
-          <Content>
+          <Box1>
             <CotentInfo>
               Welcome to <br />
               ONE_Pick
             </CotentInfo>
             <Link
               style={{
-                textDecoration: "none",
                 color: "black",
-                width: "80%",
+                width: "100%",
+                display: "inline-block",
               }}
               to="./home"
             >
               <EnterButton onClick={connectWallet}>Enter</EnterButton>
             </Link>
-          </Content>
+          </Box1>
         </Box>
       </Container>
       <Footer />
     </>
   );
 }
+
+// async await 비동기 시스템 적용

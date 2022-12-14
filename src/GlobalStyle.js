@@ -29,6 +29,10 @@ const GlobalStyle = createGlobalStyle`
         text-align: center;
         width: 100%;
     }
+
+    a {
+        text-decoration: none;
+    }
     
 `;
 

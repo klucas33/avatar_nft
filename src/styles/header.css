@@ -33,14 +33,24 @@ nav {
 
 .apple {
   color: white;
-  margin-left: 20px;
-  margin-top: 17px;
+  height: 100%;
+  margin: 0px;
+  display: flex;
+  align-items: center;
 }
 
 ul {
   display: flex;
   align-items: center;
   list-style: none;
+  width: 100%;
+  justify-content: right;
+}
+
+ul::after {
+  content: "";
+  height: 100%;
+  border: 1px solid white;
 }
 
 li {
@@ -50,4 +60,8 @@ li {
   color: white;
   vertical-align: -webkit-baseline-middle;
   cursor: pointer;
+}
+
+.fa-twitter::before {
+  content: "\f099";
 }
