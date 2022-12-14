@@ -9,6 +9,7 @@ import { injected } from "../lib/connectors";
 const Container = styled.div`
   width: 80%;
   margin: 0 auto;
+  height: 550px;
 `;
 
 const Box = styled.div`
@@ -41,7 +42,7 @@ const Box1 = styled.div`
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   position: absolute;
-  bottom: 31%;
+  bottom: 29.5%;
   left: 10%;
 `;
 

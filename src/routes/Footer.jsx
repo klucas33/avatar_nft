@@ -7,6 +7,7 @@ const Container = styled.div`
   background-color: black;
   color: white;
   display: flex;
+  align-items: center;
   width: 90%;
   margin: 0 auto;
   border-top: 3px solid white;
@@ -28,7 +29,7 @@ const TEXT = styled.p`
 const IconTo = styled.div`
   width: max-content;
   display: flex;
-  align-items: center;
+  height: 100%;
 `;
 
 const Icon = styled.i`
