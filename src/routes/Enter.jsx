@@ -9,7 +9,7 @@ import { injected } from "../lib/connectors";
 const Container = styled.div`
   width: 80%;
   margin: 0 auto;
-  height: 550px;
+  height: 600px;
 `;
 
 const Box = styled.div`
