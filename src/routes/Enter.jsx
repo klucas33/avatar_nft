@@ -52,7 +52,7 @@ const CotentInfo = styled.h1`
   margin: 20px 0 0 0;
   align-items: flex-start;
   justify-content: left;
-  cursor: none;
+  cursor: inherit;
 `;
 
 const EnterButton = styled.div`
